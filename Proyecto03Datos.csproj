@@ -46,16 +46,52 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="fmAcercade.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="fmAcercade.designer.cs">
+      <DependentUpon>fmAcercade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fmActualizar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmActualizar.Designer.cs">
+      <DependentUpon>fmActualizar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fmConsultar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmConsultar.Designer.cs">
+      <DependentUpon>fmConsultar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fmOrdenCapita.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmOrdenCapita.Designer.cs">
+      <DependentUpon>fmOrdenCapita.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmPrincipal.Designer.cs">
+      <DependentUpon>fmPrincipal.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="fmAcercade.resx">
+      <DependentUpon>fmAcercade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fmActualizar.resx">
+      <DependentUpon>fmActualizar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fmConsultar.resx">
+      <DependentUpon>fmConsultar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fmOrdenCapita.resx">
+      <DependentUpon>fmOrdenCapita.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fmPrincipal.resx">
+      <DependentUpon>fmPrincipal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -65,6 +101,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -78,6 +115,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="datos\bd_paises.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\desarrollo-web1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

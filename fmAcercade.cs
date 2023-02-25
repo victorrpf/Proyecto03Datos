@@ -10,11 +10,21 @@ using System.Windows.Forms;
 
 namespace Proyecto03Datos
 {
-    public partial class fmPrincipal : Form
+    public partial class fmAcercade : Form
     {
-        public fmPrincipal()
+        public fmAcercade()
         {
             InitializeComponent();
+        }
+
+        private void fmAcercade_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void btAceptar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
