@@ -274,5 +274,12 @@ namespace Proyecto03Datos
             fmAcerca.ShowDialog();
             fmAcerca.Dispose();
         }
+
+        private void btOrdenCapita_Click(object sender, EventArgs e)
+        {
+            fmOrdenCapita fmOrden = new fmOrdenCapita();
+            fmOrden.ShowDialog();
+            fmOrden.Dispose();
+        }
     }
 }

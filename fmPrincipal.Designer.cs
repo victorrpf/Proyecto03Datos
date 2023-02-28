@@ -53,12 +53,14 @@
             this.chPoblacion = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.chPib = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.chRentaCapita = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.btOrdenCapita = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.btOrdenCapita);
             this.panel1.Controls.Add(this.btAcercaDe);
             this.panel1.Controls.Add(this.btRentaCapita);
             this.panel1.Controls.Add(this.btBorrar);
@@ -74,9 +76,9 @@
             // 
             // btAcercaDe
             // 
-            this.btAcercaDe.Location = new System.Drawing.Point(786, 30);
+            this.btAcercaDe.Location = new System.Drawing.Point(818, 30);
             this.btAcercaDe.Name = "btAcercaDe";
-            this.btAcercaDe.Size = new System.Drawing.Size(121, 31);
+            this.btAcercaDe.Size = new System.Drawing.Size(89, 31);
             this.btAcercaDe.TabIndex = 6;
             this.btAcercaDe.Text = "Acerca de";
             this.btAcercaDe.UseVisualStyleBackColor = true;
@@ -302,6 +304,16 @@
             this.chRentaCapita.Text = "Renta/Cápita";
             this.chRentaCapita.Width = 100;
             // 
+            // btOrdenCapita
+            // 
+            this.btOrdenCapita.Location = new System.Drawing.Point(703, 30);
+            this.btOrdenCapita.Name = "btOrdenCapita";
+            this.btOrdenCapita.Size = new System.Drawing.Size(98, 31);
+            this.btOrdenCapita.TabIndex = 7;
+            this.btOrdenCapita.Text = "Orden Capita";
+            this.btOrdenCapita.UseVisualStyleBackColor = true;
+            this.btOrdenCapita.Click += new System.EventHandler(this.btOrdenCapita_Click);
+            // 
             // fmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -347,6 +359,7 @@
         private System.Windows.Forms.RadioButton rbContinente;
         private System.Windows.Forms.RadioButton rbPais;
         private System.Windows.Forms.CheckBox ckDescendente;
+        private System.Windows.Forms.Button btOrdenCapita;
     }
 }
 
